@@ -6,7 +6,7 @@ export default async function decorate(block) {
     const slides = document.querySelectorAll('.black-friday-carousel.block > div');
     if (n > slides.length) { slideIndex = 1; }
     if (n < 1) { slideIndex = slides.length; }
-    for (i = 0; i < slides.length; i++) {
+    for (i = 0; i < slides.length; i += 1) {
       slides[i].style.display = 'none';
     }
     slides[slideIndex - 1].style.display = 'block';
@@ -21,12 +21,12 @@ export default async function decorate(block) {
     const prev = document.createElement('a');
     prev.className = 'prev-btn';
     prev.innerText = '<';
-    prev.onclick = function() { plusSlides(-1); };
+    prev.onclick = function () { plusSlides(-1); };
 
     const next = document.createElement('a');
     next.className = 'next-btn';
     next.innerText = '>';
-    next.onclick = function() { plusSlides(1); };
+    next.onclick = function () { plusSlides(1); };
 
     block.append(prev);
     block.append(next);
