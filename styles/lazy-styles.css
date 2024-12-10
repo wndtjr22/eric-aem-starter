@@ -2,3 +2,16 @@
 .section.background-light-gray {
     background-color: lightgray;
 }
+.section.normal-style {
+    background-color: white;
+    color: black;
+}
+
+.section.normal-style a:any-link {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.section.normal-style a:hover {
+    color: var(--link-hover-color);
+}
