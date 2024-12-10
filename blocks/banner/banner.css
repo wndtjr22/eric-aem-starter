@@ -1,23 +1,23 @@
-.black-friday-carousel-wrapper {
+.banner-wrapper {
     background: white;
 }
 
-.black-friday-carousel.block {
+.banner.block {
     max-width: 1000px;
     position: relative;
     margin: auto;
     max-height: 50rem;
 }
 
-.black-friday-carousel.block > div {
+.banner.block > div {
     display: none;
 }
 
-.black-friday-carousel.block div > div {
+.banner.block div > div {
     margin: auto;
 }
 
-.black-friday-carousel.block div div picture img {
+.banner.block div div picture img {
     width: fit-content;
 }
 

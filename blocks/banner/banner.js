@@ -3,7 +3,7 @@ export default async function decorate(block) {
 
   function showSlides(n) {
     let i;
-    const slides = document.querySelectorAll('.black-friday-carousel.block > div');
+    const slides = document.querySelectorAll('.banner.block > div');
     if (n > slides.length) { slideIndex = 1; }
     if (n < 1) { slideIndex = slides.length; }
     for (i = 0; i < slides.length; i += 1) {
