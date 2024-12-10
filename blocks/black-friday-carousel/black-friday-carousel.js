@@ -1,19 +1,18 @@
 export default async function decorate(block) {
-  console.log('ERIC-BLACK-FRIDAY-BLOCK run decorate function');
   let slideIndex = 1;
 
   function showSlides(n) {
     let i;
-    let slides = document.querySelectorAll('.black-friday-carousel.block > div');
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
+    const slides = document.querySelectorAll('.black-friday-carousel.block > div');
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = 'none';
     }
-    slides[slideIndex-1].style.display = 'block';
+    slides[slideIndex - 1].style.display = 'block';
   }
 
-  function addNextBtn(block){
+  function addNextBtn(){
     // add next button
     const prev = document.createElement('a');
     prev.className = 'prev-btn';
@@ -33,9 +32,7 @@ export default async function decorate(block) {
   }
 
   showSlides(slideIndex);
-  addNextBtn(block);
-
-
+  addNextBtn();
 }
 
 
