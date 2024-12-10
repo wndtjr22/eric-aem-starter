@@ -1,6 +1,7 @@
 .banner-wrapper {
     background-color: blue;
     color: white;
+    padding: 24px !important;
 }
 
 .banner.block {

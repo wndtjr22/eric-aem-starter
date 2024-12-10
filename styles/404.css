@@ -36,7 +36,7 @@ a.error-button-back {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
-    color: #fff;
+    color: #fff !important;
     background-color: #4f46e5;
     border: none;
     border-radius: 5px;
