@@ -12,27 +12,26 @@ export default async function decorate(block) {
     slides[slideIndex - 1].style.display = 'block';
   }
 
-  function addNextBtn(){
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function addNextBtn() {
     // add next button
     const prev = document.createElement('a');
     prev.className = 'prev-btn';
     prev.innerText = '<';
-    prev.onclick = function() { plusSlides(-1);};
+    prev.onclick = function() { plusSlides(-1); };
 
     const next = document.createElement('a');
-    next.className = 'next-btn'
+    next.className = 'next-btn';
     next.innerText = '>';
-    next.onclick = function() { plusSlides(1);};
+    next.onclick = function() { plusSlides(1); };
 
     block.append(prev);
     block.append(next);
-  }
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
   }
 
   showSlides(slideIndex);
   addNextBtn();
 }
-
-
