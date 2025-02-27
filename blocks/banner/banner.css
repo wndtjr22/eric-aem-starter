@@ -13,6 +13,8 @@
 
 .banner.block > div {
     display: none;
+    background-color: white;
+    color: black;
 }
 
 .banner.block div > div {
